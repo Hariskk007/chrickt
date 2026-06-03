@@ -1,0 +1,47 @@
+/* Cricket Stats - Main Stylesheet */
+/* Imports all CSS modules in correct order */
+
+/* 1. Design System Variables */
+@import url('variables.css');
+
+/* 2. Reset & Base Styles */
+@import url('base.css');
+
+/* 3. Reusable Components */
+@import url('components.css');
+
+/* 4. Page Layouts */
+@import url('layout.css');
+
+/* Google Fonts - Preloaded in HTML head */
+/* Outfit: https://fonts.google.com/specimen/Outfit */
+/* JetBrains Mono: https://fonts.google.com/specimen/JetBrains+Mono */
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+  .header,
+  .bottom-nav,
+  .desktop-nav,
+  .btn,
+  .tabs,
+  .footer {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+    color: black;
+    padding-bottom: 0;
+  }
+  
+  .main-content {
+    padding-top: 0;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+}
